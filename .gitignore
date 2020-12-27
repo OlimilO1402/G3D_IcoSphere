@@ -5,4 +5,4 @@
 
 # Exclude user-specific files
 *.vbw
-Thumbds.db
+Thumbs.db
