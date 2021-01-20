@@ -111,7 +111,7 @@ Begin VB.Form Form1
       Width           =   1215
    End
    Begin VB.PictureBox Picture2 
-      BackColor       =   &H00FFFFFF&
+      BackColor       =   &H80000005&
       ForeColor       =   &H00000000&
       Height          =   7935
       Left            =   8760
@@ -139,7 +139,7 @@ Begin VB.Form Form1
       Width           =   615
    End
    Begin VB.PictureBox Picture1 
-      BackColor       =   &H00FFFFFF&
+      BackColor       =   &H80000005&
       Height          =   7935
       Left            =   120
       ScaleHeight     =   7875
