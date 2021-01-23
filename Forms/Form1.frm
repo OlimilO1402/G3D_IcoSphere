@@ -5,6 +5,7 @@ Begin VB.Form Form1
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   18555
+   Icon            =   "Form1.frx":0000
    LinkTopic       =   "Form1"
    ScaleHeight     =   8535
    ScaleWidth      =   18555
@@ -193,6 +194,8 @@ Private Sub Form_Load()
     ReDim colors(0 To 6)
     icosph2(0) = icosphere1 'kopieren
     'Debug.Print "i: " & i & " | " & CheckEulerPolyeder(newics(i))
+    Randomize
+    colors(i) = RGB(Rnd * 256, Rnd * 256, Rnd * 256) 'Picture2.ForeColor
     For i = 1 To 6
         icosph2(i) = Icosahedron_subdivide(icosph2(i - 1))
         'Debug.Print "i: " & i & " | p: " & CheckEulerPolyeder(newics(i))
@@ -366,12 +369,12 @@ End Sub
 Private Sub Draw1()
     Picture1.Cls
     If Check3.Value = vbChecked Then
-        M3D.DrawObj3D_projected Picture1, m_Projection, icosphere1, vbBlack
+        M3D.DrawObj3D_projected Picture1, m_Projection, icosphere1, Picture1.ForeColor 'vbBlack
     Else
         If Option1.Value Then
-            M3D.DrawObj3D_xy Picture1, icosphere1, vbBlack
+            M3D.DrawObj3D_xy Picture1, icosphere1, Picture1.ForeColor  'vbBlack
         ElseIf Option2.Value Then
-            M3D.DrawObj3D_xz Picture1, icosphere1, vbBlack
+            M3D.DrawObj3D_xz Picture1, icosphere1, Picture1.ForeColor  'vbBlack
         End If
     End If
 End Sub
