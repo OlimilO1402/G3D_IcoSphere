@@ -1,5 +1,5 @@
 # G3D_IcoSphere
-## How to make sphere by subdividing Icosahedron  
+## How to make a sphere by subdividing an Icosahedron  
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/OlimilO1402/G3D_IcoSphere?style=plastic)](https://github.com/OlimilO1402/G3D_IcoSphere/releases/latest)
 [![Github All Releases](https://img.shields.io/github/downloads/OlimilO1402/G3D_IcoSphere/total.svg)]()  
 and as an easter-egg how to make an egg out of the sphere.  
